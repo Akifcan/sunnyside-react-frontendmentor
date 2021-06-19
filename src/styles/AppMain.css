@@ -1,0 +1,31 @@
+main {
+  padding: 1.5rem 1rem;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  main {
+    background-image: url(../images/desktop/image-header.jpg);
+  }
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main h1 {
+  margin-top: 50px;
+  font-size: clamp(3rem, 5vw, 10rem);
+  line-height: 1;
+  color: white;
+  font-family: var(--font-fraunces);
+}
